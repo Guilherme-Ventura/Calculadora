@@ -1,0 +1,47 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+
+#calculadora{
+    width: 400px;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#operation{
+    text-align: right;
+}
+
+#previus-operation, #current-operation{
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#current-operation{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.buttons-container button{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.buttons-container button:hover{
+    background-color: #baba;
+    border-color: #999;
+}
+
